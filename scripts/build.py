@@ -152,9 +152,9 @@ def hero(t):
     # left: the wall text
     x = 36
     text = [
-        caps("Permanent collection  ·  Open daily  ·  Admission free", 10.5, x + 2, 92, t["sub"], extra=' class="r r1"'),
-        T(SERIF, "Iris Zhou", 88, x - 4, 188, t["ink"], extra=' class="r r2"'),
-        T(ITALIC, "A Cabinet of Small Worlds", 39, x, 242, t["brass"], extra=' class="r r3"'),
+        caps("Permanent collection  ·  Open daily  ·  Admission free", 10.5, x + 2, 92, t["sub"]),
+        T(SERIF, "Iris Zhou", 88, x - 4, 188, t["ink"]),
+        T(ITALIC, "A Cabinet of Small Worlds", 39, x, 242, t["brass"]),
     ]
 
     # right: an iris diaphragm opening onto a night
@@ -230,8 +230,6 @@ def hero(t):
         ".bi{animation:irisb 18s cubic-bezier(.65,0,.3,1) infinite}"
         "@keyframes irisb{0%,100%{transform:rotate(21deg)}38%,80%{transform:rotate(57deg)}}"
         ".s{animation:tw 3.6s ease-in-out infinite}@keyframes tw{0%,100%{opacity:1}50%{opacity:.25}}"
-        ".r{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}.r2{animation-delay:.12s}.r3{animation-delay:.28s}.r4{animation-delay:.44s}"
-        "@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}"
     )
     return svg(W, H, "".join(text) + device, css, defs, "Iris Zhou. A Cabinet of Small Worlds.")
 
