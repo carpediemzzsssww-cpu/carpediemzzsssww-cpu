@@ -1,0 +1,11 @@
+scripts/preview-*.html
+.DS_Store
+__pycache__/
+preview/
+node_modules/
+.env
+.env.*
+.vercel/
+.claude/
+.codex/
+.agents/
